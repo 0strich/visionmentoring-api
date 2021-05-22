@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  node:
+    image: visionmentoring-api
+    container_name: hosting-api-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - VIRTUAL_HOST=visionmentoring-api.salt-mine.io
+      - LETSENCRYPT_HOST=visionmentoring-api.salt-mine.io
+      - LETSENCRYPT_EMAIL=olive@salt-mine.io
+    network_mode: "webproxy"
+    restart: always
