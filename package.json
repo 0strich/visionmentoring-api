@@ -1,0 +1,24 @@
+{
+  "name": "visionmentoring-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.6.5",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.7",
+    "pug": "2.0.0-beta11",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.7"
+  }
+}
